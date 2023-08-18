@@ -1,5 +1,5 @@
 
-@id = d70a0376-164f-4724-aeda-3ebee17afa44
+@id = 012e34ca-3f2c-4f3c-b8b9-15a0564bee93
 GET http://localhost:5218/breakfasts/{{id}}
 
 {

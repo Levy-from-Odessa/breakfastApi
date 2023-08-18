@@ -1,3 +1,2 @@
-namespace BuberBreakfast.Services.Breakfasts;
-public record struct UpsertBreakfast(bool IsCreated);
+public record struct UpsertedBreakfast(bool IsCreated);
 

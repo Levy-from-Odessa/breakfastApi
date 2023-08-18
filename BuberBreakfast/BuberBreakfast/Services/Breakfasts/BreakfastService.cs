@@ -25,7 +25,7 @@ public class BreakfastService : IBreakfastService
   }
   public ErrorOr<UpsertedBreakfast> UpsertBreakfast(Breakfast breakfast)
   {
-    var IsCreated = !_breakfasts.ContainsKey(breakfast.id);
+    var IsCreated = !_breakfasts.ContainsKey(breakfast.Id);
 
     _breakfasts[breakfast.Id] = breakfast;
     return new UpsertedBreakfast(IsCreated);

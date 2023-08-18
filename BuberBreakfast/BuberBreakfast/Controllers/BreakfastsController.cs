@@ -34,8 +34,8 @@ public class BreakfastsController : ApiController
 
     ErrorOr<Created> createBreakfastRes = _breakfastService.CreateBreakfast(breakfast);
 
-    createBreakfastRes.Match(
-      breakfast => CreatedAsGetBreakfast(breakfast),
+    return createBreakfastRes.Match<IActionResult>(
+      created => CreatedAsGetBreakfast(breakfast),
       errors => Problem(errors)
     );
 
@@ -67,19 +67,18 @@ public class BreakfastsController : ApiController
 
     ErrorOr<UpsertedBreakfast> upsertedResult = _breakfastService.UpsertBreakfast(response);
 
-    upsertedResult.Match(
-      breakfast => breakfast.IsCreated ? CreatedAsGetBreakfast(breakfast) : NoContent(),
+    return upsertedResult.Match(
+      updated => updated.IsCreated ? CreatedAsGetBreakfast(response) : NoContent(),
       errors => Problem(errors)
     );
 
-    return NoContent();
   }
   [HttpDelete("{id:guid}")]
   public IActionResult deleteBreakfast(Guid id)
   {
     ErrorOr<Deleted> deleteBreakfastRes = _breakfastService.DeleteBreakfast(id);
     return deleteBreakfastRes.Match<IActionResult>(
-      deleted => NoContent,
+      deleted => NoContent(),
       errors => Problem(errors)
     );
   }
@@ -99,12 +98,12 @@ public class BreakfastsController : ApiController
     );
   }
 
-  private CreatedAsGetBreakfast CreatedAsGetBreakfast(Breakfast breakfast)
+  private CreatedAtActionResult CreatedAsGetBreakfast(Breakfast breakfast)
   {
     return CreatedAtAction(
       actionName: nameof(GetBreakfast),
       routeValues: new { id = breakfast.Id },
-      value: response
+      value: MapBreakfastToResponse(breakfast)
     );
   }
 }
