@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast/BuberBreakfast.csproj": {}
+  },
+  "projects": {
+    "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast.Contracts/BuberBreakfast.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast.Contracts/BuberBreakfast.Contracts.csproj",
+        "projectName": "BuberBreakfast.Contracts",
+        "projectPath": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast.Contracts/BuberBreakfast.Contracts.csproj",
+        "packagesPath": "/home/sava/.nuget/packages/",
+        "outputPath": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sava/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/216/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast/BuberBreakfast.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast/BuberBreakfast.csproj",
+        "projectName": "BuberBreakfast",
+        "projectPath": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast/BuberBreakfast.csproj",
+        "packagesPath": "/home/sava/.nuget/packages/",
+        "outputPath": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sava/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/snap/dotnet-sdk/216/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast.Contracts/BuberBreakfast.Contracts.csproj": {
+                "projectPath": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast.Contracts/BuberBreakfast.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/216/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

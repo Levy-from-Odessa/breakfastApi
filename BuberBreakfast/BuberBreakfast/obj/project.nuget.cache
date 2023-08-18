@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P3mybO79lIhcMIIyioTxmA5SiE60/nzkA3ANWT0mOxR4UgQeW8+1uvJuSB11Zn3/1AonG99PKKGj8INJOXIHCg==",
+  "success": true,
+  "projectFilePath": "/home/sava/Projects/breakFastApi/BuberBreakfast/BuberBreakfast/BuberBreakfast.csproj",
+  "expectedPackageFiles": [
+    "/home/sava/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
