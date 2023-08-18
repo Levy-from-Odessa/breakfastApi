@@ -1,7 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace BuberBreakfast.ErrorController;
-public class ErrorController : ControllerBase
+
+using Microsoft.AspNetCore.Mvc;
+using BuberBreakfast.Controllers.ApiController;
+public class ErrorController : ApiController
 {
   [Route("/error")]
   public IActionResult Error()
